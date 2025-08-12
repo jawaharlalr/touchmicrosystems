@@ -19,45 +19,51 @@ export default function Contact() {
 
   return (
     <div
-      className="relative bg-cover bg-center min-h-screen"
+      className="relative min-h-screen bg-center bg-cover"
       style={{ backgroundImage: "url('/images/herosection.jpg')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
       {/* Page Content */}
-      <div className="relative max-w-6xl mx-auto text-white pt-32 px-6 pb-16">
+      <div className="relative max-w-6xl px-6 pt-32 pb-16 mx-auto text-white">
         {/* Home Button */}
         <Link
           to="/"
-          className="absolute top-20 right-6 bg-yellow-500 hover:bg-yellow-600 text-black px-3 py-2 rounded-lg flex items-center gap-2 font-semibold shadow-lg transition"
+          className="absolute flex items-center gap-2 px-3 py-2 font-semibold text-black transition rounded-lg shadow-lg top-20 right-6"
+          style={{ backgroundColor: "#FF4C00" }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FF4C00")}
         >
           <Home size={18} />
           Home
         </Link>
 
-        <h2 className="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+        <h2 className="mb-6 text-3xl font-bold text-center">Contact Us</h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid gap-8 md:grid-cols-2">
           {/* Contact Info */}
           <div className="space-y-6">
             <p className="flex items-start">
-              <MapPin className="text-yellow-400 mr-3 flex-shrink-0 mt-1" />
+              <MapPin
+                className="flex-shrink-0 mt-1 mr-3"
+                style={{ color: "#FF4C00" }}
+              />
               2nd floor No 3, 4, Annai Sathya Nagar Main Rd, Chennai, Tamil Nadu 600089
             </p>
 
             <a
               href="tel:+919876543210"
-              className="flex items-center no-underline text-white"
+              className="flex items-center text-white no-underline"
             >
-              <Phone className="text-yellow-400 mr-3" /> +91 98765 43210
+              <Phone className="mr-3" style={{ color: "#FF4C00" }} /> +91 98765 43210
             </a>
 
             <a
               href="mailto:info@touchmicro.com"
-              className="flex items-center no-underline text-white"
+              className="flex items-center text-white no-underline"
             >
-              <Mail className="text-yellow-400 mr-3" /> info@touchmicro.com
+              <Mail className="mr-3" style={{ color: "#FF4C00" }} /> info@touchmicro.com
             </a>
           </div>
 
@@ -79,7 +85,10 @@ export default function Contact() {
               href="https://www.google.com/maps/dir/?api=1&destination=Annai+Sathya+Nagar+Main+Rd,+Chennai,+Tamil+Nadu+600089"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 bg-yellow-400 text-gray-900 font-semibold px-6 py-2 rounded-lg hover:bg-yellow-300 transition"
+              className="px-6 py-2 mt-5 font-semibold text-gray-900 transition rounded-lg"
+              style={{ backgroundColor: "#FF4C00" }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FF4C00")}
             >
               Get Directions
             </a>
@@ -91,7 +100,10 @@ export default function Contact() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-yellow-500 hover:bg-yellow-600 text-black p-3 rounded-full shadow-lg transition"
+          className="fixed p-3 text-black transition rounded-full shadow-lg bottom-6 right-6"
+          style={{ backgroundColor: "#FF4C00" }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FF4C00")}
         >
           <ArrowUp size={20} />
         </button>

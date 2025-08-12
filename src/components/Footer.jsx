@@ -3,30 +3,44 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="px-4 py-10 mt-auto text-gray-300 bg-gray-900">
-      <div className="grid grid-cols-1 gap-10 mx-auto max-w-7xl sm:grid-cols-2 md:grid-cols-3 text-sm sm:text-base">
+    <footer
+      className="px-4 py-10 mt-auto"
+      style={{ backgroundColor: "#1E1E1E", color: "#F0F0F0" }}
+    >
+      <div className="grid grid-cols-1 gap-10 mx-auto text-sm max-w-7xl sm:grid-cols-2 md:grid-cols-3 sm:text-base">
 
         {/* Company Info */}
         <div>
-          <h4 className="mb-3 text-lg font-bold text-yellow-400">
+          <h4
+            className="mb-3 text-lg font-bold"
+            style={{ color: "#FF4C00" }}
+          >
             TOUCH MICRO SYSTEMS SERVICES
           </h4>
-          <p className="text-gray-400">
+          <p style={{ color: "#F0F0F0" }}>
             Reliable and affordable electronics repair, hardware servicing, software installation, and custom solutions.
           </p>
-          <p className="mt-4 text-gray-500 text-sm">
+          <p className="mt-4 text-sm" style={{ color: "#FFFFFF" }}>
             © {new Date().getFullYear()} TOUCH MICRO SYSTEMS. All rights reserved.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h4 className="mb-3 text-lg font-bold text-yellow-400">Quick Links</h4>
+          <h4
+            className="mb-3 text-lg font-bold"
+            style={{ color: "#FF4C00" }}
+          >
+            Quick Links
+          </h4>
           <ul className="space-y-2">
             <li>
               <Link
                 to="/"
-                className="inline-block transition-transform duration-200 text-gray-400 hover:text-yellow-400 hover:scale-105"
+                className="inline-block transition-transform duration-200"
+                style={{ color: "#F0F0F0" }}
+                onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
+                onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
               >
                 Home
               </Link>
@@ -34,7 +48,10 @@ export default function Footer() {
             <li>
               <Link
                 to="/about"
-                className="inline-block transition-transform duration-200 text-gray-400 hover:text-yellow-400 hover:scale-105"
+                className="inline-block transition-transform duration-200"
+                style={{ color: "#F0F0F0" }}
+                onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
+                onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
               >
                 About Us
               </Link>
@@ -42,7 +59,10 @@ export default function Footer() {
             <li>
               <Link
                 to="/contact"
-                className="inline-block transition-transform duration-200 text-gray-400 hover:text-yellow-400 hover:scale-105"
+                className="inline-block transition-transform duration-200"
+                style={{ color: "#F0F0F0" }}
+                onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
+                onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
               >
                 Contact Us
               </Link>
@@ -52,30 +72,41 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h4 className="mb-3 text-lg font-bold text-yellow-400">Contact</h4>
+          <h4
+            className="mb-3 text-lg font-bold"
+            style={{ color: "#FF4C00" }}
+          >
+            Contact
+          </h4>
 
           <div className="flex items-start gap-2 mb-3">
-            <Mail className="mt-1 text-yellow-400" size={18} />
+            <Mail className="mt-1" size={18} color="#FF4C00" />
             <a
               href="mailto:info@touchmicro.com"
-              className="transition text-gray-400 hover:text-yellow-400 no-underline"
+              className="no-underline transition"
+              style={{ color: "#F0F0F0" }}
+              onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
+              onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
             >
               info@touchmicro.com
             </a>
           </div>
 
           <div className="flex items-center gap-2 mb-3">
-            <Phone className="text-yellow-400" size={18} />
+            <Phone size={18} color="#FF4C00" />
             <a
               href="tel:+919876543210"
-              className="transition text-gray-400 hover:text-yellow-400 no-underline"
+              className="no-underline transition"
+              style={{ color: "#F0F0F0" }}
+              onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
+              onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
             >
               +91 98765 43210
             </a>
           </div>
 
-          <div className="flex items-start gap-2 text-gray-400">
-            <MapPin className="mt-1 text-yellow-400" size={18} />
+          <div className="flex items-start gap-2" style={{ color: "#F0F0F0" }}>
+            <MapPin className="mt-1" size={18} color="#FF4C00" />
             <span>
               2nd floor No 3, 4, Annai Sathya Nagar Main Rd,<br />
               Chennai, Tamil Nadu 600089

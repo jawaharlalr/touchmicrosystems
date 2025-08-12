@@ -15,27 +15,39 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full z-50 transition-all ${
-        scrolled ? "bg-gray-900 bg-opacity-80 shadow-lg" : "bg-transparent"
+        scrolled ? "bg-[#1E1E1E] bg-opacity-80 shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 relative">
+      <div className="relative flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
         
         {/* Logo - Left Corner & Clickable */}
         <Link to="/" className="flex-shrink-0">
-          <h1 className="text-xl font-bold text-yellow-400">
+          <h1 className="text-xl font-bold" style={{ color: "#FF4C00" }}>
             TOUCH MICRO SYSTEMS
           </h1>
         </Link>
 
         {/* Desktop Menu - Centered */}
-        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
-          <Link to="/" className="text-white hover:text-yellow-400">
+        <div className="absolute hidden space-x-8 transform -translate-x-1/2 md:flex left-1/2">
+          <Link
+            to="/"
+            className="hover:text-[#FF4C00]"
+            style={{ color: "#F0F0F0" }}
+          >
             Home
           </Link>
-          <Link to="/about" className="text-white hover:text-yellow-400">
+          <Link
+            to="/about"
+            className="hover:text-[#FF4C00]"
+            style={{ color: "#F0F0F0" }}
+          >
             About Us
           </Link>
-          <Link to="/contact" className="text-white hover:text-yellow-400">
+          <Link
+            to="/contact"
+            className="hover:text-[#FF4C00]"
+            style={{ color: "#F0F0F0" }}
+          >
             Contact Us
           </Link>
         </div>
@@ -43,7 +55,8 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white"
+          className="md:hidden"
+          style={{ color: "#F0F0F0" }}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -53,26 +66,29 @@ export default function Navbar() {
       {isOpen && (
         <div
           className={`md:hidden ${
-            scrolled ? "bg-gray-900 bg-opacity-80" : "bg-transparent"
+            scrolled ? "bg-[#1E1E1E] bg-opacity-80" : "bg-transparent"
           } px-4 pb-4 flex flex-col items-center space-y-2`}
         >
           <Link
             to="/"
-            className="text-white hover:text-yellow-400"
+            className="hover:text-[#FF4C00]"
+            style={{ color: "#F0F0F0" }}
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-white hover:text-yellow-400"
+            className="hover:text-[#FF4C00]"
+            style={{ color: "#F0F0F0" }}
             onClick={() => setIsOpen(false)}
           >
             About Us
           </Link>
           <Link
             to="/contact"
-            className="text-white hover:text-yellow-400"
+            className="hover:text-[#FF4C00]"
+            style={{ color: "#F0F0F0" }}
             onClick={() => setIsOpen(false)}
           >
             Contact Us

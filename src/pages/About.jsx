@@ -20,56 +20,61 @@ export default function About() {
 
   return (
     <div
-      className="relative bg-cover bg-center bg-fixed min-h-screen"
+      className="relative min-h-screen bg-fixed bg-center bg-cover"
       style={{ backgroundImage: "url('/images/herosection.jpg')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
       {/* Page Content */}
-      <div className="relative max-w-6xl mx-auto text-center text-white pt-32 px-6 pb-16">
+      <div className="relative max-w-6xl px-6 pt-32 pb-16 mx-auto text-center text-white">
         {/* Home Button */}
         <Link
           to="/"
-          className="absolute top-20 right-6 bg-yellow-500 hover:bg-yellow-600 text-black px-3 py-2 rounded-lg flex items-center gap-2 font-semibold shadow-lg transition"
+          className="absolute flex items-center gap-2 px-3 py-2 font-semibold text-black transition rounded-lg shadow-lg top-20 right-6"
+          style={{ backgroundColor: "#FF4C00" }}
+          onMouseEnter={e => e.currentTarget.style.backgroundColor = "#e04300"}
+          onMouseLeave={e => e.currentTarget.style.backgroundColor = "#FF4C00"}
         >
           <Home size={18} />
           Home
         </Link>
 
-        <h2 className="text-4xl font-bold mb-4">About Us</h2>
+        <h2 className="mb-4 text-4xl font-bold">About Us</h2>
         <p className="max-w-2xl mx-auto mb-12">
           For over a decade,{" "}
-          <span className="font-semibold">TOUCH MICRO SYSTEMS SERVICES</span>{" "}
+          <span className="font-semibold" style={{ color: "#FF4C00" }}>
+            TOUCH MICRO SYSTEMS SERVICES
+          </span>{" "}
           has been a trusted name in electronics repair, setup, and custom tech
           solutions in Chennai. Our experienced team combines expertise with
           genuine customer care.
         </p>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-10">
-          <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-lg p-8 hover:bg-opacity-20 transition duration-300">
-            <Wrench className="mx-auto text-yellow-400" size={48} />
-            <h3 className="font-semibold text-lg mt-6 mb-2">Expert Repairs</h3>
-            <p className="text-gray-200 text-sm">
+        <div className="grid gap-10 md:grid-cols-3">
+          <div className="p-8 transition duration-300 bg-white shadow-lg bg-opacity-10 backdrop-blur-md rounded-2xl hover:bg-opacity-20">
+            <Wrench className="mx-auto" size={48} style={{ color: "#FF4C00" }} />
+            <h3 className="mt-6 mb-2 text-lg font-semibold">Expert Repairs</h3>
+            <p className="text-sm text-gray-200">
               From smartphones to industrial electronics, we handle repairs with
               precision tools and quality components.
             </p>
           </div>
 
-          <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-lg p-8 hover:bg-opacity-20 transition duration-300">
-            <Monitor className="mx-auto text-yellow-400" size={48} />
-            <h3 className="font-semibold text-lg mt-6 mb-2">Device Setup</h3>
-            <p className="text-gray-200 text-sm">
+          <div className="p-8 transition duration-300 bg-white shadow-lg bg-opacity-10 backdrop-blur-md rounded-2xl hover:bg-opacity-20">
+            <Monitor className="mx-auto" size={48} style={{ color: "#FF4C00" }} />
+            <h3 className="mt-6 mb-2 text-lg font-semibold">Device Setup</h3>
+            <p className="text-sm text-gray-200">
               We set up and optimize smart TVs, networks, and automation
               systems for peak performance.
             </p>
           </div>
 
-          <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-lg p-8 hover:bg-opacity-20 transition duration-300">
-            <Cpu className="mx-auto text-yellow-400" size={48} />
-            <h3 className="font-semibold text-lg mt-6 mb-2">Tech Solutions</h3>
-            <p className="text-gray-200 text-sm">
+          <div className="p-8 transition duration-300 bg-white shadow-lg bg-opacity-10 backdrop-blur-md rounded-2xl hover:bg-opacity-20">
+            <Cpu className="mx-auto" size={48} style={{ color: "#FF4C00" }} />
+            <h3 className="mt-6 mb-2 text-lg font-semibold">Tech Solutions</h3>
+            <p className="text-sm text-gray-200">
               Need custom software, upgrades, or integrated systems? We deliver
               tailored solutions for your needs.
             </p>
@@ -81,7 +86,10 @@ export default function About() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-yellow-500 hover:bg-yellow-600 text-black p-3 rounded-full shadow-lg transition"
+          className="fixed p-3 text-black rounded-full shadow-lg bottom-6 right-6"
+          style={{ backgroundColor: "#FF4C00" }}
+          onMouseEnter={e => e.currentTarget.style.backgroundColor = "#e04300"}
+          onMouseLeave={e => e.currentTarget.style.backgroundColor = "#FF4C00"}
         >
           <ArrowUp size={20} />
         </button>
