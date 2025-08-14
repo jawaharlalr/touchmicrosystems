@@ -8,6 +8,7 @@ export default function HeroSection() {
     { name: "Lenovo", src: "/images/lenovo.png" },
     { name: "Samsung", src: "/images/samsung.png", noBlur: true },
     { name: "Asus", src: "/images/asus.png", noBlur: true },
+    { name: "Zebronics", src: "/images/zeb.png" },
   ];
 
   return (

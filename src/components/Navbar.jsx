@@ -66,14 +66,14 @@ export default function Navbar() {
             Accessories
           </button>
           <Link
-            to="/about"
+            to="/aboutus"
             className="text-[#F0F0F0] hover:text-[#FF4C00] transition-colors"
             onClick={scrollToTop}
           >
             About Us
           </Link>
           <Link
-            to="/contact"
+            to="/contactus"
             className="text-[#F0F0F0] hover:text-[#FF4C00] transition-colors"
             onClick={scrollToTop}
           >
