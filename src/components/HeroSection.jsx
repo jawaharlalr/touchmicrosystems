@@ -2,7 +2,6 @@ import React from "react";
 
 export default function HeroSection() {
   const brands = [
-    { name: "LG", src: "/images/lg.png" },
     { name: "Dell", src: "/images/dell.png" },
     { name: "HP", src: "/images/hp.png" },
     { name: "Acer", src: "/images/acer.png" },
@@ -33,7 +32,7 @@ export default function HeroSection() {
 
         {/* CTA Button */}
         <a
-          href="#services"
+          href="/contact"
           className="inline-block px-6 py-3 font-semibold text-white transition transform rounded-lg shadow-md hover:scale-105"
           style={{ backgroundColor: "#FF4C00" }}
           onMouseEnter={(e) =>
@@ -58,11 +57,11 @@ export default function HeroSection() {
           <div className="absolute top-0 right-0 z-20 w-16 h-full pointer-events-none bg-gradient-to-l from-black/50 to-transparent"></div>
 
           {/* Scrolling Logos */}
-          <div className="flex items-center gap-6 animate-scroll-slow">
+          <div className="flex gap-6 whitespace-nowrap animate-scroll-loop">
             {[...brands, ...brands].map((brand, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center flex-shrink-0 w-24 h-24 p-4 transition-transform bg-white rounded-lg shadow-md hover:scale-110 sm:w-28 sm:h-28"
+                className="inline-flex items-center justify-center w-24 h-24 p-4 transition-transform bg-white rounded-lg shadow-md hover:scale-110 sm:w-28 sm:h-28"
               >
                 <img
                   src={brand.src}
@@ -79,16 +78,17 @@ export default function HeroSection() {
 
       {/* Animation Styles */}
       <style jsx>{`
-        @keyframes scrollSlow {
+        @keyframes scrollLoop {
           0% {
-            transform: translateX(0%);
+            transform: translateX(0);
           }
           100% {
             transform: translateX(-50%);
           }
         }
-        .animate-scroll-slow {
-          animation: scrollSlow 22s linear infinite;
+        .animate-scroll-loop {
+          display: inline-flex;
+          animation: scrollLoop 15s linear infinite;
         }
       `}</style>
     </section>

@@ -2,6 +2,10 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer
       className="px-4 py-10 mt-auto"
@@ -11,10 +15,7 @@ export default function Footer() {
 
         {/* Company Info */}
         <div>
-          <h4
-            className="mb-3 text-lg font-bold"
-            style={{ color: "#FF4C00" }}
-          >
+          <h4 className="mb-3 text-lg font-bold" style={{ color: "#FF4C00" }}>
             TOUCH MICRO SYSTEMS SERVICES
           </h4>
           <p style={{ color: "#F0F0F0" }}>
@@ -27,10 +28,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4
-            className="mb-3 text-lg font-bold"
-            style={{ color: "#FF4C00" }}
-          >
+          <h4 className="mb-3 text-lg font-bold" style={{ color: "#FF4C00" }}>
             Quick Links
           </h4>
           <ul className="space-y-2">
@@ -41,6 +39,7 @@ export default function Footer() {
                 style={{ color: "#F0F0F0" }}
                 onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
                 onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
+                onClick={scrollToTop}
               >
                 Home
               </Link>
@@ -52,6 +51,7 @@ export default function Footer() {
                 style={{ color: "#F0F0F0" }}
                 onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
                 onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
+                onClick={scrollToTop}
               >
                 About Us
               </Link>
@@ -63,6 +63,7 @@ export default function Footer() {
                 style={{ color: "#F0F0F0" }}
                 onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
                 onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
+                onClick={scrollToTop}
               >
                 Contact Us
               </Link>
@@ -72,10 +73,7 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h4
-            className="mb-3 text-lg font-bold"
-            style={{ color: "#FF4C00" }}
-          >
+          <h4 className="mb-3 text-lg font-bold" style={{ color: "#FF4C00" }}>
             Contact
           </h4>
 

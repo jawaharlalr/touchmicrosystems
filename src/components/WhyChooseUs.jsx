@@ -36,18 +36,23 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-16 bg-[#111827]">
-      <div className="px-6 mx-auto text-center max-w-7xl">
-        <h2 className="mb-8 text-3xl font-bold text-white">Why Choose Us?</h2>
-        <div className="grid gap-8 md:grid-cols-3">
+    <section className="py-12 sm:py-16 bg-[#111827]">
+      <div className="px-4 mx-auto text-center sm:px-6 max-w-7xl">
+        <h2 className="mb-6 text-2xl font-bold text-white sm:mb-8 sm:text-3xl">
+          Why Choose Us?
+        </h2>
+
+        <div className="grid grid-cols-2 gap-4 gap-6 sm:grid-cols-2 md:grid-cols-3 sm:gap-8">
           {features.map(({ icon: Icon, title, desc }, idx) => (
             <div
               key={idx}
-              className="p-6 transition border rounded-lg shadow-lg backdrop-blur-md bg-white/20 hover:bg-white/30 border-white/20"
+              className="flex flex-col items-center p-3 text-center transition border rounded-lg shadow-md sm:p-6 backdrop-blur-sm bg-white/10 hover:bg-white/20 hover:scale-105 border-white/20"
             >
-              <Icon className="w-12 h-12 mx-auto mb-4 text-[#FF4C00]" />
-              <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
-              <p className="text-gray-200">{desc}</p>
+              <Icon className="w-12 h-12 mb-3 text-[#FF4C00] sm:mb-4" />
+              <h3 className="mb-1 text-base font-semibold text-white sm:mb-2 sm:text-lg">
+                {title}
+              </h3>
+              <p className="text-xs text-gray-200 sm:text-sm">{desc}</p>
             </div>
           ))}
         </div>

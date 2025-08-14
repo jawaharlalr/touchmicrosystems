@@ -32,33 +32,35 @@ export default function AccessoriesSection() {
   ];
 
   return (
-    <section className="py-16 bg-[#111827]">
-      <div className="max-w-6xl px-6 mx-auto text-center">
-        <h2 className="mb-6 text-3xl font-bold" style={{ color: "#FF4C00" }}>
+    <section className="py-10 sm:py-16 bg-[#111827]">
+      <div className="max-w-6xl px-4 mx-auto text-center sm:px-6">
+        <h2 className="mb-4 text-xl font-bold sm:mb-6 sm:text-3xl" style={{ color: "#FF4C00" }}>
           Laptop & Desktop Accessories
         </h2>
-        <p className="max-w-3xl mx-auto mb-12 text-lg text-white">
+        <p className="max-w-xs mx-auto mb-8 text-sm text-white sm:max-w-3xl sm:mb-12 sm:text-lg">
           We offer a wide range of laptop and desktop accessories for sale.
         </p>
 
-        <h3 className="mb-4 text-xl font-semibold text-[#FF4C00]">Laptop Accessories</h3>
-        <ul className="grid gap-4 mb-12 md:grid-cols-2 lg:grid-cols-3">
+        {/* Laptop Accessories */}
+        <h3 className="mb-3 text-lg sm:mb-4 sm:text-2xl font-semibold text-[#FF4C00]">Laptop Accessories</h3>
+        <ul className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3">
           {laptopAccessories.map((item, idx) => (
             <li
               key={idx}
-              className="p-4 text-white transition border rounded-lg backdrop-blur-md bg-white/10 hover:bg-white/20"
+              className="p-2 text-sm text-white transition border rounded-lg sm:p-4 sm:text-base backdrop-blur-sm bg-white/10 hover:bg-white/20 hover:scale-105"
             >
               {item}
             </li>
           ))}
         </ul>
 
-        <h3 className="mb-4 text-xl font-semibold text-[#FF4C00]">Desktop Accessories</h3>
-        <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {/* Desktop Accessories */}
+        <h3 className="mb-3 text-lg sm:mb-4 sm:text-2xl font-semibold text-[#FF4C00]">Desktop Accessories</h3>
+        <ul className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3">
           {desktopAccessories.map((item, idx) => (
             <li
               key={idx}
-              className="p-4 text-white transition border rounded-lg backdrop-blur-md bg-white/10 hover:bg-white/20"
+              className="p-2 text-sm text-white transition border rounded-lg sm:p-4 sm:text-base backdrop-blur-sm bg-white/10 hover:bg-white/20 hover:scale-105"
             >
               {item}
             </li>

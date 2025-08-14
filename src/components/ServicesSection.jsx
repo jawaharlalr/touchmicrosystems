@@ -12,19 +12,17 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="py-16 bg-[#111827]">
-      <div className="px-6 mx-auto text-center max-w-7xl">
-        <h2
-          className="mb-8 text-3xl font-bold"
-          style={{ color: "#FF4C00" }}
-        >
+    <section className="py-12 sm:py-16 bg-[#111827]">
+      <div className="px-4 mx-auto text-center sm:px-6 max-w-7xl">
+        <h2 className="mb-6 text-2xl font-bold sm:mb-8 sm:text-3xl" style={{ color: "#FF4C00" }}>
           Our Services
         </h2>
-        <ul className="grid gap-6 text-white md:grid-cols-2 lg:grid-cols-3">
+
+        <ul className="grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-3 sm:gap-6">
           {services.map((service, idx) => (
             <li
               key={idx}
-              className="p-5 text-center transition border rounded-lg shadow-lg backdrop-blur-md bg-white/20 hover:bg-white/30 border-white/20"
+              className="flex items-center justify-center p-3 text-center text-white transition border rounded-lg shadow-md sm:p-5 backdrop-blur-sm bg-white/10 hover:bg-white/20 hover:scale-105 border-white/20"
             >
               {service}
             </li>
