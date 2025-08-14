@@ -21,12 +21,18 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <div className="bg-center bg-cover">
-        {/* Hero Section */}
-        <div id="hero">
-          <HeroSection />
-        </div>
+      {/* Hero Section - no background image here */}
+      <div id="hero">
+        <HeroSection />
+      </div>
 
+      {/* All other sections with background image */}
+      <div
+        className="bg-center bg-cover"
+        style={{
+          backgroundImage: "url('/images/home.jpg')",
+        }}
+      >
         {/* Services Section */}
         <div id="services">
           <ServicesSection />
@@ -46,8 +52,6 @@ export default function Home() {
         <div id="accessories">
           <AccessoriesSection />
         </div>
-
-        
 
         {/* Why Choose Us */}
         <div id="whychooseus">

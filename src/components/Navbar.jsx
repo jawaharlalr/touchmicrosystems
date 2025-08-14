@@ -12,18 +12,21 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll handler + scroll to top
+  // Scroll to a specific section
   const scrollToSection = (id) => {
-    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top first
     if (id) {
       const section = document.getElementById(id);
       if (section) {
-        setTimeout(() => {
-          section.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 300); // Delay to ensure scroll to top finishes
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }
-    setIsOpen(false); // Close mobile menu
+    setIsOpen(false);
+  };
+
+  // Scroll to top only
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsOpen(false);
   };
 
   return (
@@ -37,7 +40,7 @@ export default function Navbar() {
         <Link
           to="/"
           className="flex-shrink-0 text-xl font-bold text-[#FF4C00] hover:opacity-80 transition-opacity"
-          onClick={() => scrollToSection(null)}
+          onClick={scrollToTop}
         >
           TOUCH MICRO SYSTEMS
         </Link>
@@ -65,16 +68,16 @@ export default function Navbar() {
           <Link
             to="/about"
             className="text-[#F0F0F0] hover:text-[#FF4C00] transition-colors"
-            onClick={() => scrollToSection(null)}
+            onClick={scrollToTop}
           >
             About Us
           </Link>
           <Link
             to="/contact"
             className="text-[#F0F0F0] hover:text-[#FF4C00] transition-colors"
-            onClick={() => scrollToSection(null)}
+            onClick={scrollToTop}
           >
-            Contact
+            Contact Us
           </Link>
         </div>
 
@@ -111,16 +114,16 @@ export default function Navbar() {
           <Link
             to="/about"
             className="w-full text-center text-[#F0F0F0] hover:text-[#FF4C00] py-2 transition-colors"
-            onClick={() => scrollToSection(null)}
+            onClick={scrollToTop}
           >
             About Us
           </Link>
           <Link
             to="/contact"
             className="w-full text-center text-[#F0F0F0] hover:text-[#FF4C00] py-2 transition-colors"
-            onClick={() => scrollToSection(null)}
+            onClick={scrollToTop}
           >
-            Contact
+            Contact Us
           </Link>
         </div>
       )}

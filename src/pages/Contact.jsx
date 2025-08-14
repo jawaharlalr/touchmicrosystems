@@ -30,7 +30,7 @@ export default function Contact() {
         {/* Home Button */}
         <Link
           to="/"
-          className="absolute flex items-center gap-2 px-3 py-2 font-semibold text-black transition rounded-lg shadow-lg top-20 right-6"
+          className="absolute flex items-center gap-2 px-3 py-2 font-semibold text-black transition rounded-lg shadow-lg top-6 right-6"
           style={{ backgroundColor: "#FF4C00" }}
           onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}
           onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FF4C00")}
