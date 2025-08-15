@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, ArrowUp, Home } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ArrowUp, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -30,7 +30,7 @@ export default function Contact() {
         {/* Home Button */}
         <Link
           to="/"
-          className="absolute flex items-center gap-2 px-3 py-2 font-semibold text-black transition rounded-lg shadow-lg top-6 right-6"
+          className="absolute flex items-center gap-2 px-3 py-2 font-semibold text-black transition rounded-lg shadow-lg top-12 right-6"
           style={{ backgroundColor: "#FF4C00" }}
           onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}
           onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FF4C00")}
@@ -49,29 +49,41 @@ export default function Contact() {
                 className="flex-shrink-0 mt-1 mr-3"
                 style={{ color: "#FF4C00" }}
               />
-              2nd floor No 3, 4, Annai Sathya Nagar Main Rd, Chennai, Tamil Nadu 600089
+              2nd floor No 3, 4, Annai Sathya Nagar Main Rd, Exhilarating Nagar, B Block, Annai Sathya Nagar, Ramapuram, Chennai, Tamil Nadu 600089
             </p>
 
-            <a
-              href="tel:+919876543210"
-              className="flex items-center text-white no-underline"
-            >
-              <Phone className="mr-3" style={{ color: "#FF4C00" }} /> +91 98765 43210
+            {/* Phone */}
+            <a href="tel:+919876543210" className="flex items-center no-underline">
+              <Phone className="mr-3" style={{ color: "#FF4C00" }} />
+              <span className="text-white transition-colors duration-200 hover:text-red-500">
+                +91 98765 43210
+              </span>
             </a>
 
-            <a
-              href="mailto:info@touchmicro.com"
-              className="flex items-center text-white no-underline"
-            >
-              <Mail className="mr-3" style={{ color: "#FF4C00" }} /> info@touchmicro.com
+            {/* Email */}
+            <a href="mailto:info@touchmicro.com" className="flex items-center no-underline">
+              <Mail className="mr-3" style={{ color: "#FF4C00" }} />
+              <span className="text-white transition-colors duration-200 hover:text-red-500">
+                info@touchmicro.com
+              </span>
             </a>
+
+            {/* Working Hours */}
+            <div className="flex items-start">
+              <Clock className="flex-shrink-0 mt-1 mr-3" style={{ color: "#FF4C00" }} />
+              <div>
+                <p className="font-semibold">Working Hours</p>
+                <p>Mon - Sat: 8:30 AM – 7:30 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
           </div>
 
           {/* Map + Button */}
           <div className="flex flex-col items-center w-full">
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4799408724936!2d80.21835587480556!3d13.033034487286632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d564e7647b%3A0x540bf0b4f790e6a3!2sAnnai%20Sathya%20Nagar%20Main%20Rd%2C%20Chennai%2C%20Tamil%20Nadu%20600089!5e0!3m2!1sen!2sin!4v1691763081945!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.251403570879!2d80.2729147!3d13.1278042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526533fe3d78e5%3A0x301c83fb5f2463ae!2sTOUCH%20MICRO%20SYSTEMS%20SERVICES!5e0!3m2!1sen!2sin!4v1723722000000!5m2!1sen!2sin"
               width="100%"
               height="300"
               style={{ border: 0 }}
@@ -82,7 +94,7 @@ export default function Contact() {
             ></iframe>
 
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=Annai+Sathya+Nagar+Main+Rd,+Chennai,+Tamil+Nadu+600089"
+              href="https://www.google.com/maps/place/TOUCH+MICRO+SYSTEMS+SERVICES/@13.1278042,80.2729147,202m/data=!3m3!1e3!4b1!5s0x3a526581d6062bad:0xfc02aa3c6f657252!4m6!3m5!1s0x3a526533fe3d78e5:0x301c83fb5f2463ae!8m2!3d13.1278029!4d80.2735584!16s%2Fg%2F11hkcdtn60?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 mt-5 font-semibold text-gray-900 transition rounded-lg"

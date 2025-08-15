@@ -33,7 +33,7 @@ export default function HeroSection() {
 
         {/* CTA Button */}
         <a
-          href="/contact"
+          href="/contact-us"
           className="inline-block px-6 py-3 font-semibold text-white transition transform rounded-lg shadow-md hover:scale-105"
           style={{ backgroundColor: "#FF4C00" }}
           onMouseEnter={(e) =>

@@ -14,7 +14,7 @@ export default function ExtraInfo() {
           Whether you’re an individual looking to repair your phone or a business in need of ongoing IT support, we are your go-to partner for all things electronics.
         </p>
         <a
-          href="/about"
+          href="/about-us"
           className="px-8 py-3 font-semibold text-white transition-colors duration-300 rounded-lg"
           style={{ backgroundColor: "#FF4C00" }}
           onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}

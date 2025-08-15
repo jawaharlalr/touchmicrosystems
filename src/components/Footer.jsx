@@ -46,7 +46,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/about"
+                to="/about-us"
                 className="inline-block transition-transform duration-200"
                 style={{ color: "#F0F0F0" }}
                 onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
@@ -58,7 +58,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/contact"
+                to="/contact-us"
                 className="inline-block transition-transform duration-200"
                 style={{ color: "#F0F0F0" }}
                 onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}

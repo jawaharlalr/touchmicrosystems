@@ -7,6 +7,7 @@ import ExtraInfo from "../components/ExtraInfo";
 import ProductsSection from "../components/ProductsSection";
 import AccessoriesSection from "../components/AccessoriesSection";
 import SecondHandProducts from "../components/SecondHandProducts";
+import Gallery from "../components/gallery";
 
 export default function Home() {
   const [showScroll, setShowScroll] = useState(false);
@@ -33,6 +34,13 @@ export default function Home() {
           backgroundImage: "url('/images/home.jpg')",
         }}
       >
+
+        {/* Services Section */}
+        <div id="services">
+          <Gallery />
+        </div>
+
+        
         {/* Services Section */}
         <div id="services">
           <ServicesSection />

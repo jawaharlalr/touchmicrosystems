@@ -66,14 +66,14 @@ export default function Navbar() {
             Accessories
           </button>
           <Link
-            to="/aboutus"
+            to="/about-us"
             className="text-[#F0F0F0] hover:text-[#FF4C00] transition-colors"
             onClick={scrollToTop}
           >
             About Us
           </Link>
           <Link
-            to="/contactus"
+            to="/contact-us"
             className="text-[#F0F0F0] hover:text-[#FF4C00] transition-colors"
             onClick={scrollToTop}
           >
@@ -112,14 +112,14 @@ export default function Navbar() {
             Accessories
           </button>
           <Link
-            to="/about"
+            to="/about-us"
             className="w-full text-center text-[#F0F0F0] hover:text-[#FF4C00] py-2 transition-colors"
             onClick={scrollToTop}
           >
             About Us
           </Link>
           <Link
-            to="/contact"
+            to="/contact-us"
             className="w-full text-center text-[#F0F0F0] hover:text-[#FF4C00] py-2 transition-colors"
             onClick={scrollToTop}
           >
