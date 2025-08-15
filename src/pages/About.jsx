@@ -57,7 +57,7 @@ export default function About() {
             <Wrench className="mx-auto" size={48} style={{ color: "#FF4C00" }} />
             <h3 className="mt-6 mb-2 text-lg font-semibold">Expert Repairs</h3>
             <p className="text-sm text-gray-200">
-              From smartphones to industrial electronics, we handle repairs with
+              From Laptop and Desktop to industrial electronics, we handle repairs with
               precision tools and quality components.
             </p>
           </div>

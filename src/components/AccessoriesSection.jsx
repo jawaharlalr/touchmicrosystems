@@ -34,7 +34,10 @@ export default function AccessoriesSection() {
   return (
     <section className="py-10 sm:py-16 bg-[#111827]">
       <div className="max-w-6xl px-4 mx-auto text-center sm:px-6">
-        <h2 className="mb-4 text-xl font-bold sm:mb-6 sm:text-3xl" style={{ color: "#FF4C00" }}>
+        <h2
+          className="mb-4 text-xl font-bold sm:mb-6 sm:text-3xl"
+          style={{ color: "#FF4C00" }}
+        >
           Laptop & Desktop Accessories
         </h2>
         <p className="max-w-xs mx-auto mb-8 text-sm text-white sm:max-w-3xl sm:mb-12 sm:text-lg">
@@ -42,8 +45,10 @@ export default function AccessoriesSection() {
         </p>
 
         {/* Laptop Accessories */}
-        <h3 className="mb-3 text-lg sm:mb-4 sm:text-2xl font-semibold text-[#FF4C00]">Laptop Accessories</h3>
-        <ul className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3">
+        <h3 className="mb-3 text-lg sm:mb-4 sm:text-2xl font-semibold text-[#FF4C00]">
+          Laptop Accessories
+        </h3>
+        <ul className="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-3">
           {laptopAccessories.map((item, idx) => (
             <li
               key={idx}
@@ -55,8 +60,10 @@ export default function AccessoriesSection() {
         </ul>
 
         {/* Desktop Accessories */}
-        <h3 className="mb-3 text-lg sm:mb-4 sm:text-2xl font-semibold text-[#FF4C00]">Desktop Accessories</h3>
-        <ul className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3">
+        <h3 className="mt-14 mb-3 text-lg sm:mb-4 sm:text-2xl font-semibold text-[#FF4C00]">
+          Desktop Accessories
+        </h3>
+        <ul className="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-3">
           {desktopAccessories.map((item, idx) => (
             <li
               key={idx}
