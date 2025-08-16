@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
-import HeroSection from "../components/HeroSection";
-import WhyChooseUs from "../components/WhyChooseUs";
-import ServicesSection from "../components/ServicesSection";
-import ExtraInfo from "../components/ExtraInfo";
-import ProductsSection from "../components/ProductsSection";
-import AccessoriesSection from "../components/AccessoriesSection";
-import SecondHandProducts from "../components/SecondHandProducts";
-import Gallery from "../components/gallery";
+import HeroSection from "../components/sections/HeroSection";
+import WhyChooseUs from "../components/sections/WhyChooseUs";
+import ServicesSection from "../components/sections/ServicesSection";
+import ExtraInfo from "../components/sections/ExtraInfo";
+import ProductsSection from "../components/sections/ProductsSection";
+import AccessoriesSection from "../components/sections/AccessoriesSection";
+import SecondHandProducts from "../components/sections/SecondHandProducts";
+import Gallery from "../components/sections/gallery";
 
 export default function Home() {
   const [showScroll, setShowScroll] = useState(false);
