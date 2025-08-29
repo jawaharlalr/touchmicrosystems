@@ -2,19 +2,19 @@ import React from "react";
 
 export default function HeroSection() {
   const brands = [
-    { name: "Dell", src: "/images/dell.png" },
-    { name: "HP", src: "/images/hp.png" },
-    { name: "Acer", src: "/images/acer.png" },
-    { name: "Lenovo", src: "/images/lenovo.png" },
-    { name: "Samsung", src: "/images/samsung.png", noBlur: true },
-    { name: "Asus", src: "/images/asus.png", noBlur: true },
-    { name: "Zebronics", src: "/images/zeb.png" },
+    { name: "Dell", src: "/images/dell.webp" },
+    { name: "HP", src: "/images/hp.webp" },
+    { name: "Acer", src: "/images/acer.webp" },
+    { name: "Lenovo", src: "/images/lenovo.webp" },
+    { name: "Samsung", src: "/images/samsung.webp", noBlur: true },
+    { name: "Asus", src: "/images/asus.webp", noBlur: true },
+    { name: "Zebronics", src: "/images/zeb.webp" },
   ];
 
   return (
     <section
       className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center bg-center bg-cover md:px-12"
-      style={{ backgroundImage: "url('/images/herosection.jpg')" }}
+      style={{ backgroundImage: "url('/images/herosection.webp')" }}
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
@@ -70,6 +70,7 @@ export default function HeroSection() {
                   className={`w-full h-full object-contain ${
                     brand.noBlur ? "" : "blur-[0.3px]"
                   }`}
+                  loading="lazy"
                 />
               </div>
             ))}

@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 export default function Gallery() {
   const images = [
-    { src: "/images/shop.jpg", alt: "Our Shop" },
-    { src: "/images/work.jpg", alt: "Our Work" },
+    { src: "/images/shop.webp", alt: "Our Shop" },
+    { src: "/images/work.webp", alt: "Our Work" },
   ];
 
   return (

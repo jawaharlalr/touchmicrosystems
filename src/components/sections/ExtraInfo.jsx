@@ -5,10 +5,10 @@ export default function ExtraInfo() {
     <section className="py-16 bg-[#111827]">
       <div className="max-w-6xl px-6 mx-auto text-center">
         <h2 className="mb-6 text-3xl font-bold" style={{ color: "#FF4C00" }}>
-          Serving Chennai for Over 10 Years
+          Serving Chennai for Over Years
         </h2>
         <p className="max-w-3xl mx-auto mb-6 text-lg text-white">
-          At TOUCH MICRO SYSTEMS SERVICES, we pride ourselves on delivering top-quality electronics services with unbeatable customer support.
+          At TOUCH MICRO SYSTEMS SERVICES, we pride ourselves on delivering top-quality electronics services with good customer support.
         </p>
         <p className="max-w-4xl mx-auto mb-12 text-gray-200">
           Whether you’re an individual looking to repair your phone or a business in need of ongoing IT support, we are your go-to partner for all things electronics.

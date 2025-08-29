@@ -36,7 +36,7 @@ export default function Home() {
       >
 
         {/* Services Section */}
-        <div id="services">
+        <div id="gallery">
           <Gallery />
         </div>
 

@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="px-4 py-10 mt-auto"
+      className="px-4 pt-10 mt-auto"
       style={{ backgroundColor: "#1E1E1E", color: "#F0F0F0" }}
     >
       <div className="grid grid-cols-1 gap-10 mx-auto text-sm max-w-7xl sm:grid-cols-2 md:grid-cols-3 sm:text-base">
@@ -16,13 +16,10 @@ export default function Footer() {
         {/* Company Info */}
         <div>
           <h4 className="mb-3 text-lg font-bold" style={{ color: "#FF4C00" }}>
-            TOUCH MICRO SYSTEMS SERVICES
+            TOUCH MICRO SYSTEM SERVICES
           </h4>
           <p style={{ color: "#F0F0F0" }}>
             Reliable and affordable electronics repair, hardware servicing, software installation, and custom solutions.
-          </p>
-          <p className="mt-4 text-sm" style={{ color: "#FFFFFF" }}>
-            © {new Date().getFullYear()} TOUCH MICRO SYSTEMS. All rights reserved.
           </p>
         </div>
 
@@ -37,8 +34,8 @@ export default function Footer() {
                 to="/"
                 className="inline-block transition-transform duration-200"
                 style={{ color: "#F0F0F0" }}
-                onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
-                onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
+                onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
+                onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
                 onClick={scrollToTop}
               >
                 Home
@@ -49,8 +46,8 @@ export default function Footer() {
                 to="/about-us"
                 className="inline-block transition-transform duration-200"
                 style={{ color: "#F0F0F0" }}
-                onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
-                onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
+                onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
+                onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
                 onClick={scrollToTop}
               >
                 About Us
@@ -61,8 +58,8 @@ export default function Footer() {
                 to="/contact-us"
                 className="inline-block transition-transform duration-200"
                 style={{ color: "#F0F0F0" }}
-                onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
-                onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
+                onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
+                onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
                 onClick={scrollToTop}
               >
                 Contact Us
@@ -83,8 +80,8 @@ export default function Footer() {
               href="mailto:info@touchmicro.com"
               className="no-underline transition"
               style={{ color: "#F0F0F0" }}
-              onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
-              onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
+              onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
+              onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
             >
               info@touchmicro.com
             </a>
@@ -96,8 +93,8 @@ export default function Footer() {
               href="tel:+919876543210"
               className="no-underline transition"
               style={{ color: "#F0F0F0" }}
-              onMouseEnter={e => e.currentTarget.style.color = "#FF4C00"}
-              onMouseLeave={e => e.currentTarget.style.color = "#F0F0F0"}
+              onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
+              onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
             >
               +91 98765 43210
             </a>
@@ -111,6 +108,11 @@ export default function Footer() {
             </span>
           </div>
         </div>
+      </div>
+
+      {/* Bottom Center Copyright */}
+      <div className="pt-10 text-center pb-14 sm:text-sm" style={{ color: "#FFFFFF" }}>
+        © {new Date().getFullYear()} Touch Micro System Services. All rights reserved.
       </div>
     </footer>
   );

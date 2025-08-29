@@ -20,7 +20,7 @@ export default function Contact() {
   return (
     <div
       className="relative min-h-screen bg-center bg-cover"
-      style={{ backgroundImage: "url('/images/herosection.jpg')" }}
+      style={{ backgroundImage: "url('/images/herosection.webp')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
