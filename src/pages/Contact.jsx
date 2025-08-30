@@ -56,7 +56,7 @@ export default function Contact() {
             <a href="tel:+919876543210" className="flex items-center no-underline">
               <Phone className="mr-3" style={{ color: "#FF4C00" }} />
               <span className="text-white transition-colors duration-200 hover:text-red-500">
-                +91 98765 43210
+                +91 9790741494
               </span>
             </a>
 

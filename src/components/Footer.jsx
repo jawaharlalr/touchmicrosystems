@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa"; // ✅ WhatsApp icon
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -16,11 +17,32 @@ export default function Footer() {
         {/* Company Info */}
         <div>
           <h4 className="mb-3 text-lg font-bold" style={{ color: "#FF4C00" }}>
-            TOUCH MICRO SYSTEM SERVICES
+            TOUCH MICRO SYSTEMS SERVICES
           </h4>
           <p style={{ color: "#F0F0F0" }}>
-            Reliable and affordable electronics repair, hardware servicing, software installation, and custom solutions.
+            Reliable and affordable electronics repair, hardware servicing,
+            software installation, and custom solutions.
           </p>
+
+          {/* Social Links */}
+          <div className="mt-6">
+            <h4 className="mb-3 text-lg font-bold" style={{ color: "#FF4C00" }}>
+              Social Links
+            </h4>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://wa.me/919790741494"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition"
+                style={{ color: "#F0F0F0" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#25D366")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
+              >
+                <FaWhatsapp size={24} />
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Quick Links */}
@@ -34,8 +56,8 @@ export default function Footer() {
                 to="/"
                 className="inline-block transition-transform duration-200"
                 style={{ color: "#F0F0F0" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
                 onClick={scrollToTop}
               >
                 Home
@@ -46,8 +68,8 @@ export default function Footer() {
                 to="/about-us"
                 className="inline-block transition-transform duration-200"
                 style={{ color: "#F0F0F0" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
                 onClick={scrollToTop}
               >
                 About Us
@@ -58,8 +80,8 @@ export default function Footer() {
                 to="/contact-us"
                 className="inline-block transition-transform duration-200"
                 style={{ color: "#F0F0F0" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
                 onClick={scrollToTop}
               >
                 Contact Us
@@ -80,8 +102,8 @@ export default function Footer() {
               href="mailto:info@touchmicro.com"
               className="no-underline transition"
               style={{ color: "#F0F0F0" }}
-              onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
-              onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
             >
               info@touchmicro.com
             </a>
@@ -90,20 +112,24 @@ export default function Footer() {
           <div className="flex items-center gap-2 mb-3">
             <Phone size={18} color="#FF4C00" />
             <a
-              href="tel:+919876543210"
+              href="tel:+919790741494"
               className="no-underline transition"
               style={{ color: "#F0F0F0" }}
-              onMouseEnter={e => (e.currentTarget.style.color = "#FF4C00")}
-              onMouseLeave={e => (e.currentTarget.style.color = "#F0F0F0")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
             >
-              +91 98765 43210
+              +91 9790741494
             </a>
           </div>
 
-          <div className="flex items-start gap-2" style={{ color: "#F0F0F0" }}>
+          <div
+            className="flex items-start gap-2 mb-3"
+            style={{ color: "#F0F0F0" }}
+          >
             <MapPin className="mt-1" size={18} color="#FF4C00" />
             <span>
-              2nd floor No 3, 4, Annai Sathya Nagar Main Rd,<br />
+              2nd floor No 3, 4, Annai Sathya Nagar Main Rd,
+              <br />
               Chennai, Tamil Nadu 600089
             </span>
           </div>
@@ -111,8 +137,12 @@ export default function Footer() {
       </div>
 
       {/* Bottom Center Copyright */}
-      <div className="pt-10 text-center pb-14 sm:text-sm" style={{ color: "#FFFFFF" }}>
-        © {new Date().getFullYear()} Touch Micro System Services. All rights reserved.
+      <div
+        className="pt-10 text-center pb-14 sm:text-sm"
+        style={{ color: "#FFFFFF" }}
+      >
+        © {new Date().getFullYear()} Touch Micro System Services. All rights
+        reserved.
       </div>
     </footer>
   );
