@@ -94,7 +94,18 @@ export default function Navbar() {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col items-center pt-24 space-y-6">
+        {/* Close Button inside menu */}
+        <div className="flex justify-end p-4">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-[#F0F0F0] hover:text-[#FF4C00] focus:outline-none"
+          >
+            <X size={28} />
+          </button>
+        </div>
+
+        {/* Menu Links */}
+        <div className="flex flex-col items-center pt-10 space-y-6">
           <button
             onClick={() => scrollToSection("services")}
             className="w-full text-center text-lg text-[#F0F0F0] hover:text-[#FF4C00] py-2 transition-colors"
