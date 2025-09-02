@@ -99,13 +99,13 @@ export default function Footer() {
           <div className="flex items-start gap-2 mb-3">
             <Mail className="mt-1" size={18} color="#FF4C00" />
             <a
-              href="mailto:info@touchmicro.com"
+              href="mailto:keentouchmicro@gmail.com"
               className="no-underline transition"
               style={{ color: "#F0F0F0" }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
             >
-              info@touchmicro.com
+              keentouchmicro@gmail.com
             </a>
           </div>
 

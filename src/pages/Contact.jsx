@@ -61,10 +61,10 @@ export default function Contact() {
             </a>
 
             {/* Email */}
-            <a href="mailto:info@touchmicro.com" className="flex items-center no-underline">
+            <a href="mailto:keentouchmicro@gmail.com" className="flex items-center no-underline">
               <Mail className="mr-3" style={{ color: "#FF4C00" }} />
               <span className="text-white transition-colors duration-200 hover:text-red-500">
-                info@touchmicro.com
+                keentouchmicro@gmail.com
               </span>
             </a>
 
