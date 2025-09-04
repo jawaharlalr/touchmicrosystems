@@ -13,7 +13,6 @@ export default function Footer() {
       style={{ backgroundColor: "#1E1E1E", color: "#F0F0F0" }}
     >
       <div className="grid grid-cols-1 gap-10 mx-auto text-sm max-w-7xl sm:grid-cols-2 md:grid-cols-3 sm:text-base">
-
         {/* Company Info */}
         <div>
           <h4 className="mb-3 text-lg font-bold" style={{ color: "#FF4C00" }}>
@@ -96,41 +95,58 @@ export default function Footer() {
             Contact
           </h4>
 
+          {/* Email */}
           <div className="flex items-start gap-2 mb-3">
             <Mail className="mt-1" size={18} color="#FF4C00" />
             <a
-              href="mailto:keentouchmicro@gmail.com"
+              href="mailto:keepntouchmicro@gmail.com"
               className="no-underline transition"
               style={{ color: "#F0F0F0" }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
             >
-              keentouchmicro@gmail.com
+              keepntouchmicro@gmail.com
             </a>
           </div>
 
+          {/* Phones in same line */}
           <div className="flex items-center gap-2 mb-3">
             <Phone size={18} color="#FF4C00" />
-            <a
-              href="tel:+919790741494"
-              className="no-underline transition"
-              style={{ color: "#F0F0F0" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
-            >
-              +91 9790741494
-            </a>
+            <span>
+              <a
+                href="tel:+919790741494"
+                className="no-underline transition"
+                style={{ color: "#F0F0F0" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
+              >
+                +91 9790741494
+              </a>
+              <span className="mx-2">|</span>
+              <a
+                href="tel:+914446065723"
+                className="no-underline transition"
+                style={{ color: "#F0F0F0" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4C00")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#F0F0F0")}
+              >
+                044 46065723
+              </a>
+            </span>
           </div>
 
+          {/* Address */}
           <div
             className="flex items-start gap-2 mb-3"
             style={{ color: "#F0F0F0" }}
           >
             <MapPin className="mt-1" size={18} color="#FF4C00" />
             <span>
-              2nd floor No 3, 4, Annai Sathya Nagar Main Rd,
+              8/42, Mount Poonamallee Road, 
               <br />
-              Chennai, Tamil Nadu 600089
+              Ramachandran Nagar, Iyyappanthangal,
+              <br />
+              Chennai-600056
             </span>
           </div>
         </div>

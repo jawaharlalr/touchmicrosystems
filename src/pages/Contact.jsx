@@ -49,22 +49,30 @@ export default function Contact() {
                 className="flex-shrink-0 mt-1 mr-3"
                 style={{ color: "#FF4C00" }}
               />
-              2nd floor No 3, 4, Annai Sathya Nagar Main Rd, Exhilarating Nagar, B Block, Annai Sathya Nagar, Ramapuram, Chennai, Tamil Nadu 600089
+              8/42, Mount Poonamallee Road, Ramachandran Nagar,
+              Iyyappanthangal, Chennai-600056
             </p>
 
-            {/* Phone */}
-            <a href="tel:+919876543210" className="flex items-center no-underline">
+            {/* Phone (with | separator) */}
+            <div className="flex items-center">
               <Phone className="mr-3" style={{ color: "#FF4C00" }} />
               <span className="text-white transition-colors duration-200 hover:text-red-500">
-                +91 9790741494
+                <a href="tel:+919790741494">+91 9790741494</a>
               </span>
-            </a>
+              <span className="mx-2">|</span>
+              <span className="text-white transition-colors duration-200 hover:text-red-500">
+                <a href="tel:+914446065723">044 46065723</a>
+              </span>
+            </div>
 
             {/* Email */}
-            <a href="mailto:keentouchmicro@gmail.com" className="flex items-center no-underline">
+            <a
+              href="mailto:keepntouchmicro@gmail.com"
+              className="flex items-center no-underline"
+            >
               <Mail className="mr-3" style={{ color: "#FF4C00" }} />
               <span className="text-white transition-colors duration-200 hover:text-red-500">
-                keentouchmicro@gmail.com
+                keepntouchmicro@gmail.com
               </span>
             </a>
 
@@ -83,7 +91,7 @@ export default function Contact() {
           <div className="flex flex-col items-center w-full">
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.251403570879!2d80.2729147!3d13.1278042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526533fe3d78e5%3A0x301c83fb5f2463ae!2sTOUCH%20MICRO%20SYSTEMS%20SERVICES!5e0!3m2!1sen!2sin!4v1723722000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.890596023022!2d80.131796!3d13.037587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f8b18b16b9%3A0x1234567890abcdef!2s8%2F42%20Mount%20Poonamallee%20Rd%2C%20Iyyappanthangal%2C%20Chennai%2C%20Tamil%20Nadu%20600056!5e0!3m2!1sen!2sin!4v1736022000000!5m2!1sen!2sin"
               width="100%"
               height="300"
               style={{ border: 0 }}
@@ -94,7 +102,7 @@ export default function Contact() {
             ></iframe>
 
             <a
-              href="https://www.google.com/maps/place/TOUCH+MICRO+SYSTEMS+SERVICES/@13.1278042,80.2729147,202m/data=!3m3!1e3!4b1!5s0x3a526581d6062bad:0xfc02aa3c6f657252!4m6!3m5!1s0x3a526533fe3d78e5:0x301c83fb5f2463ae!8m2!3d13.1278029!4d80.2735584!16s%2Fg%2F11hkcdtn60?entry=ttu"
+              href="https://www.google.com/maps/place/8%2F42+Mount+Poonamallee+Rd,+Iyyappanthangal,+Chennai,+Tamil+Nadu+600056"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 mt-5 font-semibold text-gray-900 transition rounded-lg"
