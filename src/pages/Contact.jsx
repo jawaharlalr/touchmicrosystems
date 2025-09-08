@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail, Clock, ArrowUp, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -22,6 +23,45 @@ export default function Contact() {
       className="relative min-h-screen bg-center bg-cover"
       style={{ backgroundImage: "url('/images/herosection.webp')" }}
     >
+      <Helmet>
+        <title>Contact Us | Touch Microsystems</title>
+        <meta
+          name="description"
+          content="Get in touch with Touch Microsystems for expert electronics repair, device setup, and custom tech solutions in Chennai. Call, email, or visit us today."
+        />
+        <meta
+          name="keywords"
+          content="Contact Touch Microsystems, electronics repair Chennai, device setup, support, services"
+        />
+
+        
+        <meta property="og:title" content="Contact Us | Touch Microsystems" />
+        <meta
+          property="og:description"
+          content="Need help with electronics repair, setup, or custom solutions? Contact Touch Microsystems in Chennai today."
+        />
+        <meta
+          property="og:image"
+          content="https://www.touchmicrosystemservices.in/images/header.png"
+        />
+        <meta
+          property="og:url"
+          content="https://touchmicrosystems.in/contact-us"
+        />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | Touch Microsystems" />
+        <meta
+          name="twitter:description"
+          content="Need help with electronics repair, setup, or custom solutions? Contact Touch Microsystems in Chennai today."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.touchmicrosystemservices.in/images/header.png"
+        />
+      </Helmet>
+
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
@@ -32,8 +72,12 @@ export default function Contact() {
           to="/"
           className="absolute flex items-center gap-2 px-3 py-2 font-semibold text-black transition rounded-lg shadow-lg top-20 right-6"
           style={{ backgroundColor: "#FF4C00" }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FF4C00")}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.backgroundColor = "#e04300")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.backgroundColor = "#FF4C00")
+          }
         >
           <Home size={18} />
           Home
@@ -53,7 +97,7 @@ export default function Contact() {
               Iyyappanthangal, Chennai-600056
             </p>
 
-            {/* Phone (with | separator) */}
+            {/* Phone */}
             <div className="flex items-center">
               <Phone className="mr-3" style={{ color: "#FF4C00" }} />
               <span className="text-white transition-colors duration-200 hover:text-red-500">
@@ -78,7 +122,10 @@ export default function Contact() {
 
             {/* Working Hours */}
             <div className="flex items-start">
-              <Clock className="flex-shrink-0 mt-1 mr-3" style={{ color: "#FF4C00" }} />
+              <Clock
+                className="flex-shrink-0 mt-1 mr-3"
+                style={{ color: "#FF4C00" }}
+              />
               <div>
                 <p className="font-semibold">Working Hours</p>
                 <p>Mon - Sat: 8:30 AM – 7:30 PM</p>
@@ -107,8 +154,12 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="px-6 py-2 mt-5 font-semibold text-gray-900 transition rounded-lg"
               style={{ backgroundColor: "#FF4C00" }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FF4C00")}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#e04300")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#FF4C00")
+              }
             >
               Get Directions
             </a>
@@ -122,8 +173,12 @@ export default function Contact() {
           onClick={scrollToTop}
           className="fixed p-3 text-black transition rounded-full shadow-lg bottom-6 right-6"
           style={{ backgroundColor: "#FF4C00" }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e04300")}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FF4C00")}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.backgroundColor = "#e04300")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.backgroundColor = "#FF4C00")
+          }
         >
           <ArrowUp size={20} />
         </button>

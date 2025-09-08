@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { ArrowUp } from "lucide-react";
 import HeroSection from "../components/sections/HeroSection";
 import WhyChooseUs from "../components/sections/WhyChooseUs";
@@ -22,7 +23,30 @@ export default function Home() {
 
   return (
     <div className="relative">
-      {/* Hero Section - no background image here */}
+      
+      <Helmet>
+        <title>Touch Microsystems | Embedded Solutions & Electronics Services</title>
+        <meta
+          name="description"
+          content="Touch Microsystems offers embedded solutions, electronic products, second-hand devices, and accessories. Explore our innovative and reliable services."
+        />
+        <meta name="keywords" content="Touch Microsystems, embedded systems, electronics, second-hand products, accessories, services" />
+
+        
+        <meta property="og:title" content="Touch Microsystems | Embedded Solutions & Electronics Services" />
+        <meta property="og:description" content="Explore embedded solutions, electronics products, and accessories from Touch Microsystems." />
+        <meta property="og:image" content="https://www.touchmicrosystemservices.in/images/header.png" />
+        <meta property="og:url" content="https://touchmicrosystems.in/" />
+        <meta property="og:type" content="website" />
+
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Touch Microsystems | Embedded Solutions & Electronics Services" />
+        <meta name="twitter:description" content="Explore embedded solutions, electronics products, and accessories from Touch Microsystems." />
+        <meta name="twitter:image" content="https://www.touchmicrosystemservices.in/images/header.png" />
+      </Helmet>
+
+      {/* Hero Section - no background image */}
       <div id="hero">
         <HeroSection />
       </div>
@@ -34,39 +58,30 @@ export default function Home() {
           backgroundImage: "url('/images/home.jpg')",
         }}
       >
-
-        {/* Services Section */}
         <div id="gallery">
           <Gallery />
         </div>
 
-        
-        {/* Services Section */}
         <div id="services">
           <ServicesSection />
         </div>
 
-        {/* Products Section */}
         <div id="products">
           <ProductsSection />
         </div>
 
-        {/* Second Hand Products Section */}
         <div id="secondhand">
           <SecondHandProducts />
         </div>
 
-        {/* Accessories Section */}
         <div id="accessories">
           <AccessoriesSection />
         </div>
 
-        {/* Why Choose Us */}
         <div id="whychooseus">
           <WhyChooseUs />
         </div>
 
-        {/* Extra Info */}
         <ExtraInfo />
       </div>
 
